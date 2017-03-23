@@ -7,10 +7,15 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Recuperar Contrase&ntilde;a V3</title> <!--Contraseña bien escrito -->
+        <title>Recuperar Contrase&ntilde;a</title> <!--Contraseña bien escrito -->
         <style>
+            .contenedor     {
+                                width:80%;
+                                margin: 0 auto;
+                            }
+            
             .boton          {    
-                                background-color:#16a085;
+                                background-color:#11abb0;
                                 color: white;
                                 width: 150px;
                                 text-align: center;
@@ -21,7 +26,7 @@ and open the template in the editor.
                                 border-radius: 10px;
                             }
             #parteSuperior  {
-                                background-image: url("./img/fondo.png")
+                                background-color: #3a3434;
                                 
                                     
                             }
@@ -31,6 +36,7 @@ and open the template in the editor.
                                 border: black;
                                 border-top: black;
                                 border-bottom: black;
+                                padding-left:10px
                                   
                                 
                             }
@@ -66,7 +72,7 @@ and open the template in the editor.
                                 font-weight: bold;
                             }
             .pieDePagina    {
-                                background-image: url("./img/fondoPiePagina.png");
+                                background-color: #d2d8d8;
                                 margin: 0 auto;
 
                                 
@@ -82,8 +88,9 @@ and open the template in the editor.
     </head>    
     
     <body>
+        <div class="contenedor">
             <div id = "parteSuperior"> 
-                <h1 id = marca> CNCCAR   </h1>
+                <h1 id = marca> <img src="img/logos/marca.gif" width="80" height="25" alt="marca"/> </h1>
                 <button class = "boton" id = botonRegresar> Regresar </button>  
                 <h2 class="encabezado" id="titulo"> Recuperar / Cambiar Contrase&ntilde;a </h2>
                 <h2 class="encabezado" id = "leyenda"> ¿No recuerdas tu contrase&ntilde;a de acceso? </h2>
@@ -105,6 +112,7 @@ and open the template in the editor.
             
             </div>
         
+        </div>
 
         
     </body>
