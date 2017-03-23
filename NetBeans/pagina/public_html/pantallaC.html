@@ -33,6 +33,7 @@ and open the template in the editor.
                                 width: 10px;
                                 position: relative;
                                 font-weight: bold;
+                                border: 0;
                                 
                             }
             #parteSuperior  {
@@ -69,22 +70,29 @@ and open the template in the editor.
                             }
             input           {
                                 background-color: #bdc3c7;
-                                margin: 0px;
-                                padding: 2%;
+                                margin: .5em 0 2em 0;
+                                padding: 3%;
                                 border: 0px;
-                                width: 80%;
+                                width: 100%;
+                                border-radius: 4px;
+
+                                
                                   
                             }
             label           {
                                 font-family: 'Raleway', sans-serif;
                                 border-color:#16a085;
-                                font-size: 2em;
-                                border-bottom:10%;
-                                font-weight: bold;
+                                font-size: .7em;
+                                font-weight: lighter;
+                                margin-top: 2em;
+                                padding-top: 2em;
+
                             }
             .pieDePagina    {
                                 background-color: #d2d8d8;
                                 margin: 0 auto;
+                                margin-top: auto;
+ 
 
                                 
                             }   
@@ -103,6 +111,14 @@ and open the template in the editor.
                                 float:left;
                                 padding: 0 5%
                             }
+            #recuperarRegresar {
+                            margin-top: 2em;
+                            width: 100%;
+                            padding: 2.5% 0; 
+                            border-radius: 4px;
+                            border-color: #11abb0;
+                            border: 0
+                            }               
         </style>
     </head>    
     
@@ -117,17 +133,17 @@ and open the template in the editor.
         </div>         
         
         <div class="contenedor">
-            <label> Datos </label> <br>
+            <label> Datos: </label> <br> <br>
             <div id="col1"> 
                 <label> Correo  </label>    <br>
-                <input type="text" id = "correo" name = "correo"> 
+                <input type="text" id = "correo" name = "correo"> <br>
                 <label> Nueva contrase&ntilde;a  </label>    <br>
                 <input type="text" id = "nuevaContraseña" name = "nuevaContraseña">         
             </div>
             <div id="col2">
                 <label> CURP  </label>    <br>
                 <input type="text" id = "CURP" name = "CURP">         
-                <button class = "boton" > Recuperar/ Cambiar   </button>
+                <button class = "boton" id="recuperarRegresar" > Recuperar/ Cambiar   </button>
             </div>
         </div>
         
