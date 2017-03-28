@@ -1,25 +1,48 @@
 
 <html>
     <head>
-        <title>Pagina</title>
+        <title>Tecnologias para la Web</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
-            #parrafo {color: blue;
-                      background-color: green;
-                       text-align: center}
-             
+            #parteSuperior  {
+                                background-color: #3a3434;
+     
+                            }
+                            
+            #barrasuperior  {overflow: auto;}
             
-            
+            #botonRegistro {    
+                                border-radius: 5px;
+                                border-color: #11abb0;
+                                padding:.5em 5em .5em .5em;
+                                margin-right: 10%;
+                                margin-top: 3%;
+                                float: right;
+                                width: 10px;
+                                position: relative;
+                                font-weight: bold;
+                                border: 0;
+                                
+                            }
+           .contenedor     {
+                                width:100%;
+                                margin:0 auto;
+                                overflow: auto;
+                            }
         </style>
     </head>
     <body>
-        <div>TODO write content</div>
-         <h1>TITULO DE PRUEBA</h1>
-        <p>HOla desde NetBens </p>
+        <div id = "parteSuperior"> 
+            <div id = "barrasuperior">    
+                    <h1 id = marca> <img src="img/logos/marca.gif" width="110" height="35" alt="marca"/> </h1>
+                    <button class = "boton" id = botonRegistro OnClick=" window.location.href='registro.html' "> Registro </button>  
+            </div>   
+        </div>
+        <div class="contenedor">
+            <img src="img/portada.jpg" width="500" height="300">
+        </div>
        
-        <br> </br>
-        <p id = parrafo> Editado desde atom</p>
         
     </body>
 </html>
