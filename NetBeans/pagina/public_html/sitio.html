@@ -5,13 +5,24 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
-            #parteSuperior  {
-                                background-color: #3a3434;
-     
-                            }
+            #parteSuperior  {background-color: #3a3434;}
                             
             #barrasuperior  {overflow: auto;}
             
+            .encabezado     {
+                               text-align: center;
+                               color: white; 
+                            }
+            #marca          {
+                                color: white;
+                                width: 16px;
+                                border: black;
+                                border-top: black;
+                                border-bottom: black;
+                                padding-left:10%;
+                                margin: 3% 0 0 0 ;
+                                float: left;                                       
+                            }
             #botonRegistro {    
                                 border-radius: 5px;
                                 border-color: #11abb0;
@@ -23,10 +34,17 @@
                                 position: relative;
                                 font-weight: bold;
                                 border: 0;
-                                
+                                background-color:#11abb0;
+                                color: white;
+                                width: 80px;
+                                text-align: center;
+                                font-family: 'Raleway', sans-serif;
+                                border-bottom-width: 0px;
+                                cursor: pointer;
+                                text-align: center;
                             }
            .contenedor     {
-                                width:100%;
+                                width:80%;
                                 margin:0 auto;
                                 overflow: auto;
                             }
@@ -37,10 +55,9 @@
             <div id = "barrasuperior">    
                     <h1 id = marca> <img src="img/logos/marca.gif" width="110" height="35" alt="marca"/> </h1>
                     <button class = "boton" id = botonRegistro OnClick=" window.location.href='registro.html' "> Registro </button>  
-            </div>   
-        </div>
-        <div class="contenedor">
-            <img src="img/portada.jpg" width="500" height="300">
+            </div>        
+                <h2 class="encabezado" id="titulo"> Recuperar / Cambiar Contrase&ntilde;a </h2>
+                <h2 class="encabezado" id = "leyenda"> ¿No recuerdas tu contrase&ntilde;a de acceso? </h2>
         </div>
        
         
