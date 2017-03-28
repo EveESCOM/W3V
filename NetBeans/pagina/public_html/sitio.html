@@ -4,47 +4,85 @@
         <title>Tecnologias para la Web</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="fonts/fontAwesome470/css/font-awesome.min.css">
         <style>
+            @font-face{
+                        font-family: Raleway;
+                        font-style: bold;
+                        font-weight: bold;
+                        src: url(fonts/Raleway/Raleway-Bold.ttf);
+            }
             #parteSuperior  {background-color: #3a3434;}
                             
-            #barrasuperior  {overflow: auto;}
-            
-            .encabezado     {
-                               text-align: center;
-                               color: white; 
+            #barrasuperior  {
+                                overflow: auto;
+                                width: 80%;
+                                margin: 0 auto;
                             }
             #marca          {
                                 color: white;
-                                width: 16px;
+                                width: 10%;
                                 border: black;
                                 border-top: black;
                                 border-bottom: black;
                                 padding-left:10%;
-                                margin: 3% 0 0 0 ;
+                                margin: 2% 0 0 0 ;
                                 float: left;                                       
                             }
             #botonRegistro {    
                                 border-radius: 5px;
                                 border-color: #11abb0;
-                                padding:.5em 5em .5em .5em;
-                                margin-right: 10%;
-                                margin-top: 3%;
+                                padding:.8em 4.5em .8em 1em;
+                                margin: 2% 10% 2% 0;
                                 float: right;
-                                width: 10px;
                                 position: relative;
                                 font-weight: bold;
                                 border: 0;
                                 background-color:#11abb0;
                                 color: white;
-                                width: 80px;
+                                width: .8em;
                                 text-align: center;
                                 font-family: 'Raleway', sans-serif;
                                 border-bottom-width: 0px;
                                 cursor: pointer;
                                 text-align: center;
                             }
+            .opcion         { 
+                                padding:.5em 2em .5em .5em;
+                                margin-right: 1%;
+                                margin-top: 2.5%;
+                                float: right;
+                                position: relative;
+                                font-weight: bold;
+                                border: 0;
+                                text-align: center;
+                                font-family: 'Raleway', sans-serif;
+                                border-bottom-width: 0px;
+                                color: gray;
+                                font-size: smaller;
+                                text-decoration: none;
+                            }
+            .opcion:hover   {color: white;}
+            #encabezado     {
+                                background-image: url("img/portada.jpg");
+                                font-size: 4em; /* Si se aumenta aparece Scroll horizontal*/
+                                font-family: 'Raleway', sans-serif;
+                                color: white;
+                                text-align: center;
+                                padding: 1% 5% 5% 5%
+                            }
+            #titulo         {
+                               border-bottom-style: solid;
+                               padding: 1.5% 0 2% 0;
+                               width: 80%;
+                               margin: 0 auto;
+                            }
+            #subtitulo      {
+                                padding: 0 0 4% 0; 
+                            }    
+                                            
            .contenedor     {
-                                width:80%;
+                                width:70%;
                                 margin:0 auto;
                                 overflow: auto;
                             }
@@ -73,6 +111,34 @@
                     color: white;
                     cursor: pointer;
                 }
+            #inicio
+                            {
+                                font-family: 'Noto Sans', sans-serif;
+                                text-align: center;
+                                font-size: 1.5em;
+                                background-color: #eef0f0;
+                                color:gray; 
+                            }
+            .icono{color: #838c95;}
+            .tamaño{font-size: 1.5em}
+            #primerIcono    {
+                                font-size: 8em;
+                                padding-top: .2em;
+                                padding-bottom: .15em;
+                            }
+            .subir          {
+                                position: absolute;
+                                right: 2em;
+                                top: 30em;
+                                color: white;
+                                background-color: grey;
+                                border: 0;
+                                font-size: 1.5em;
+                                padding: .2em .5em .2em .5em;
+                                margin: inherit 
+                                
+                            }    
+
         </style>
     </head>
     <body>
@@ -95,6 +161,31 @@
 
         </div>
        
+        <div id="encabezado">
+            <p id="titulo"> Tecnologías para la Web </p> 
+             <p id="subtitulo"> Semestre 2017-2</p>
+        </div>
+     
+        <div id="inicio">
+            <div class="contenedor">
+                <i class="fa fa-comment fa-5x icono " id="primerIcono" aria-hidden="true"></i>
+                    <p>El prop&oacute;sito del Coloquio es difundir trabajos de investigacion, divulgacion, implementación, reportes
+                    de tesis (linceciatura, maestría, doctorado) y aplicaciones, en Teor&iacute;a de c&oacute;digos, 
+                    Criptograf&iacute;a y &Aacute;reas afines. Uno de los prop&oacute;sitos del Coloquio es fomentar el 
+                    inter&eacute;s por estas l&iacute;neas de investigaci&o&oacute;n y su desarrollo en nuestro pa&iacute;s,
+                    as&iacute; como brindar una posibilidad de intercambiar experiencias con colegas de diversas insticuiones
+                    nacionales y extranjeras que trabajen, usen o est&eacute;n vinculadas con estos temas</p> <br>
+                    
+                    <p>Como ya es costumbre en esta actividad acad&eacute;mica, se contar&aacute; con la colaboraci&oacute;n
+                    de reconocidos especialistas a nivel nacional e internacional en la tem&&aacute;tica del evento
+                    , quienes dictar&&aacute;n conferencias plenarias.</p>
+                    <i class="fa fa-facebook icono tamaño"></i>
+                    <label>&nbsp; &nbsp;</label> <!--Separacion de los iconos, similar a una tabulador -->
+                 <i class="fa fa-twitter icono tamaño"></i>
+                 <a href="#" class="subir"  >  <i class="fa fa-chevron-up" aria-hidden="true"></i> </a>
+            </div>
+        </div>
+     
         
     </body>
 </html>
