@@ -8,7 +8,7 @@
             @font-face{
                         font-family: Raleway;
                         font-style: bold;
-                        font-weight: bols;
+                        font-weight: bold;
                         src: url(fonts/Raleway/Raleway-Bold.ttf);
             }
             #parteSuperior  {background-color: #3a3434;}
@@ -17,11 +17,6 @@
                                 overflow: auto;
                                 width: 80%;
                                 margin: 0 auto;
-                            }
-            
-            .encabezado     {
-                               text-align: center;
-                               color: white; 
                             }
             #marca          {
                                 color: white;
@@ -71,12 +66,21 @@
             .opcion:hover   {color: white;}
             #encabezado     {
                                 background-image: url("img/portada.jpg");
-                                padding: 10%;
                                 font-size: 50px;
                                 font-family: 'Raleway', sans-serif;
                                 color: white;
                                 text-align: center;
+                                padding: 1% 5% 5% 5%
                             }
+            #titulo         {
+                               border-bottom-style: solid;
+                               padding: 1.5% 0 2% 0;
+                               width: 80%;
+                               margin: 0 auto;
+                            }
+            #subtitulo      {
+                                padding: 0 0 4% 0; 
+                            }    
                                             
            .contenedor     {
                                 width:80%;
@@ -100,8 +104,8 @@
         </div>
         
         <div id="encabezado">
-            <p> Tecnologías para la Web </p> 
-            <p> Semestre 2017-2</p>
+            <p id="titulo"> Tecnologías para la Web </p> 
+            <p id="subtitulo"> Semestre 2017-2</p>
            
         
         </div>
