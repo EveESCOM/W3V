@@ -7,7 +7,11 @@
         <style>
             #parteSuperior  {background-color: #3a3434;}
                             
-            #barrasuperior  {overflow: auto;}
+            #barrasuperior  {
+                                overflow: auto;
+                                width: 80%;
+                                margin: 0 auto;
+                            }
             
             .encabezado     {
                                text-align: center;
@@ -15,20 +19,19 @@
                             }
             #marca          {
                                 color: white;
-                                width: 16px;
+                                width: 10%;
                                 border: black;
                                 border-top: black;
                                 border-bottom: black;
                                 padding-left:10%;
-                                margin: 3% 0 0 0 ;
+                                margin: 2% 0 0 0 ;
                                 float: left;                                       
                             }
             #botonRegistro {    
                                 border-radius: 5px;
                                 border-color: #11abb0;
-                                padding:.5em 5em .5em .5em;
-                                margin-right: 10%;
-                                margin-top: 3%;
+                                padding:.8em 5em .8em .5em;
+                                margin: 2% 10% 2% 0;
                                 float: right;
                                 width: 10px;
                                 position: relative;
@@ -43,6 +46,28 @@
                                 cursor: pointer;
                                 text-align: center;
                             }
+            .opcion         { 
+                                padding:.5em 2em .5em .5em;
+                                margin-right: 1%;
+                                margin-top: 2.5%;
+                                float: right;
+                                position: relative;
+                                font-weight: bold;
+                                border: 0;
+                                text-align: center;
+                                font-family: 'Raleway', sans-serif;
+                                border-bottom-width: 0px;
+                                cursor: pointer;
+                                background-color:transparent;
+                                color: gray;
+                                font-size: smaller;
+                            }
+            .opcion:hover   {color: white;}
+                            
+            #titulo         {
+                                font-size: 40px;
+                                font-family: 'Raleway', sans-serif;
+                            }                
            .contenedor     {
                                 width:80%;
                                 margin:0 auto;
@@ -54,10 +79,15 @@
         <div id = "parteSuperior"> 
             <div id = "barrasuperior">    
                     <h1 id = marca> <img src="img/logos/marca.gif" width="110" height="35" alt="marca"/> </h1>
-                    <button class = "boton" id = botonRegistro OnClick=" window.location.href='registro.html' "> Registro </button>  
+                    <button id = botonRegistro OnClick=" window.location.href='registro.html' "> Registro </button>
+                    <button class="opcion"> Sede </button>
+                    <button class="opcion"> Becas </button>
+                    <button class="opcion"> Conferencias </button>
+                    <button class="opcion"> Comit&eacute; </button>
+                    <button class="opcion"> Bienvenidos </button>
+                    <button class="opcion"> Inicio </button>
             </div>        
-                <h2 class="encabezado" id="titulo"> Recuperar / Cambiar Contrase&ntilde;a </h2>
-                <h2 class="encabezado" id = "leyenda"> ¿No recuerdas tu contrase&ntilde;a de acceso? </h2>
+
         </div>
        
         
