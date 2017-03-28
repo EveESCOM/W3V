@@ -48,16 +48,49 @@
                                 margin:0 auto;
                                 overflow: auto;
                             }
+            ul   {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    overflow: hidden;
+                    background-color: #3a3434;
+                }
+
+            li {
+                float: right;
+            }
+            li a {
+                    display: block;
+                    color: gray;
+                    text-align: center;
+                    padding: 16px;
+                    text-decoration: none;
+                    font-family: 'Raleway', sans-serif;
+                }
+
+                li a:hover {
+                    background-color: #3a3434;
+                }
         </style>
     </head>
     <body>
         <div id = "parteSuperior"> 
             <div id = "barrasuperior">    
-                    <h1 id = marca> <img src="img/logos/marca.gif" width="110" height="35" alt="marca"/> </h1>
-                    <button class = "boton" id = botonRegistro OnClick=" window.location.href='registro.html' "> Registro </button>  
-            </div>        
-                <h2 class="encabezado" id="titulo"> Recuperar / Cambiar Contrase&ntilde;a </h2>
-                <h2 class="encabezado" id = "leyenda"> ¿No recuerdas tu contrase&ntilde;a de acceso? </h2>
+                    <h1 id = marca> <img src="img/logos/marca.gif" width="110" height="35" alt="marca"/> </h1>      
+            </div>
+             
+                <ul>
+                    <li><button class = "boton" id = botonRegistro OnClick=" window.location.href='registro.html' "> Registro </button> </li>
+                    <li><a href="Sede">Sede</a></li>
+                    <li><a href="Becas">Becas</a></li>
+                    <li><a href="Conferencias">Conferencias</a></li>
+                    <li><a href="Comite">Comité</a></li>
+                    <li><a href="Bienvenidos">Bienvenidos</a></li>
+                    <li><a href="Inicio">Inicio</a></li>
+                    
+
+                 </ul>
+
         </div>
        
         
