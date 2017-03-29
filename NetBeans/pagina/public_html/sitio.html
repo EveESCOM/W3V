@@ -120,7 +120,8 @@
                                 text-align: center;
                                 font-size: 1.5em;
                                 background-color: #eef0f0;
-                                color:gray; 
+                                color:gray;
+                                padding: 0 0 5% 0;
                             }
             .icono{color: #838c95;}
             .tamaño{font-size: 1.5em}
@@ -130,18 +131,40 @@
                                 padding-bottom: .15em;
                             }
             .subir          {
-                                position: absolute;
-                                right: 2em;
-                                top: 30em;
+                                /*position: absolute;*/
+                                box-sizing:border-box; 
                                 color: white;
                                 background-color: grey;
                                 border: 0;
-                                font-size: 1.5em;
+                                font-size: 30px;
                                 padding: .2em .5em .2em .5em;
-                                margin: inherit 
+                                margin: 0 5% 0 0;
+                                float: right;
                                 
                             }    
-
+            .columna3       {
+                                font-family: 'Noto Sans', sans-serif;
+                                font-size: 20px;
+                                position:relative; 
+                                width:33.3%; 
+                                box-sizing:border-box; 
+                                float:left;
+                                
+                            }
+            #comiteOrganizador{
+                               padding: 5% 0;     
+                            }
+            h3              {
+                                color:#11abb0;
+                                margin: 0 0 10% 0;
+                            }
+            h4              {
+                                color: grey;
+                                margin: 4% 0;
+                                font-weight: bold;
+                            }
+            .fila{margin-bottom: 25% }
+                            
         </style>
     </head>
     <body>
@@ -152,17 +175,10 @@
                     <a class="opcion"> Sede </a>
                     <a class="opcion"> Becas </a>
                     <a class="opcion"> Conferencias </a>
-                    <a class="opcion"> Comit&eacute; </a>
+                    <a href="#comiteOrganizador" class="opcion"> Comit&eacute; </a>
                     <a class="opcion"> Bienvenidos </a>
                     <a href="#inicio" class="opcion" > Inicio </a>
             </div>
-             
-             
-                    
-                    
-
-            
-
         </div>
        
         <div id="encabezado">
@@ -186,10 +202,57 @@
                     <i class="fa fa-facebook icono tamaño"></i>
                     <label>&nbsp; &nbsp;</label> <!--Separacion de los iconos, similar a una tabulador -->
                  <i class="fa fa-twitter icono tamaño"></i>
-                 <a href="#" class="subir"  >  <i class="fa fa-chevron-up" aria-hidden="true"></i> </a>
             </div>
+                             <a href="#" class="subir"  >  <i class="fa fa-chevron-up" aria-hidden="true"></i> </a>
+
         </div>
-     
+        
+        <div id="comiteOrganizador">
+            <div class="contenedor">
+                <div class="fila">
+                    <div class="columna3">
+                        <h1> Comit&eacute; </h1>
+                        <h1> organizador</h1>
+                    </div>
+                    <div class="columna3">
+                        <h3>Dr. Francisco Garc&iacute;a Ugalde</h3>
+                        <h4>Divis&oacute;n de Ingenier&iacute;a El&eacute;ctrica</h4>
+                        <h4>Facultad de Ingenier&iacute;a</h4>
+                        <h4>Universidad Nacional Aut&oacute;noma de </h4>  
+                        <h4>M&eacute;xico</h4>
+                    </div>
+                    <div class="columna3">
+                        <h3>Dra. Gina Gallegos Garc&iacute;a</h3>
+                        <h4>Escuela Superior de Ingenier&iacute;a</h4>
+                        <h4>Mec&aacute;nica y El&eacute;ctrica</h4>
+                        <h4>Unidad Culhuac&aacute;n</h4>
+                        <h4>Instituto Polit&eacute;cnico Nacional</h4> 
+                    </div>
+                </div>
+
+                <div class="fila">
+                    <div class="columna3">
+                        <h3>Dr. Jos&eacute; No&eacute; Guti&eacute;rrez Herrera</h3>
+                        <h4>Departamento de Matem&aacute;ticas</h4>
+                        <h4>Universidad Aut&oacute;noma Metropolitana</h4>
+                        <h4>Unidad Iztapalapa</h4>
+                    </div>
+                    <div class="columna3">
+                        <h3>Dr. Horacio Tapia Recillas</h3>
+                        <h4>Departamento de Matem&aacute;ticas</h4>
+                        <h4>Universidad Aut&oacute;noma Metropolitana</h4>
+                        <h4>Unidad Iztapalapa</h4>
+                    </div>
+                    <div class="columna3">
+                        <h3>Dra. Sandra D&iacute;az Santiago </h3>
+                        <h4>Escuela Superior de C&oacute;mputo</h4>
+                        <h4>Instituto Polit&eacute;cnico Nacional</h4>
+                    </div>
+                </div> 
+            </div>
+                <a href="#" class="subir"  >  <i class="fa fa-chevron-up" aria-hidden="true"></i> </a>
+
+        </div>
         
     </body>
 </html>
