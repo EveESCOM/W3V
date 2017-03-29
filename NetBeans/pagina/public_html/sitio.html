@@ -78,7 +78,7 @@
                                margin: 0 auto;
                             }
             #subtitulo      {
-                                padding: 0 0 4% 0; 
+                                padding: 0 0 10% 0; 
                             }    
                                             
            .contenedor     {
@@ -131,17 +131,16 @@
                                 padding-bottom: .15em;
                             }
             .subir          {
-                                /*position: absolute;*/
                                 box-sizing:border-box; 
                                 color: white;
-                                background-color: grey;
+                                background-color: black;
                                 border: 0;
                                 font-size: 30px;
                                 padding: .2em .5em .2em .5em;
                                 margin: 0 5% 0 0;
-                                float: right;
-                                
-                            }    
+                                float: right; 
+                            } 
+            #primerSubir{background-color: gray}                
             .columna3       {
                                 font-family: 'Noto Sans', sans-serif;
                                 font-size: 20px;
@@ -149,11 +148,9 @@
                                 width:33.3%; 
                                 box-sizing:border-box; 
                                 float:left;
-                                
                             }
-            #comiteOrganizador{
-                               padding: 5% 0;     
-                            }
+            #comiteOrganizador{padding: 5% 0;}
+            h1              {font-family: 'Noto Sans', sans-serif;color: indigo}
             h3              {
                                 color:#11abb0;
                                 margin: 0 0 10% 0;
@@ -164,7 +161,38 @@
                                 font-weight: bold;
                             }
             .fila{margin-bottom: 25% }
-                            
+            .columna4       {
+                                font-family: 'Noto Sans', sans-serif;
+                                font-size: 20px;
+                                position:relative; 
+                                width:21%; 
+                                box-sizing:border-box; 
+                                float:left;
+                                margin: 0 2%;
+                            }
+            #galeria        {
+                                background-color: #eef0f0;
+                                padding: 0 0 4% 0;
+                            }
+            .tituloSeccion  {
+                                margin: 0 0 5% 0;
+                                padding: 4% 0;
+                                font-family: 'Noto Sans', sans-serif;
+                                color: grey;
+                            }
+            .contenedorConferencistas{margin: 0 10% 10% 20%;}
+            .conferencistasNombres{
+                                color:#11abb0;
+                                margin: 2% 0;   
+                            }
+            .conferencistasDetalles{margin: 1% 0;}
+            .separacion     {
+                                border-bottom-style: solid;
+                                border-bottom-color: #bdc3c7;
+                                border-bottom-width: thin ;
+                                margin: 0 0 5% 0;
+                            }
+            
         </style>
     </head>
     <body>
@@ -174,10 +202,10 @@
                     <a id = botonRegistro OnClick=" window.location.href='registro.html' "> Registro </a>
                     <a class="opcion"> Sede </a>
                     <a class="opcion"> Becas </a>
-                    <a class="opcion"> Conferencias </a>
+                    <a href="#conferencistas" class="opcion"> Conferencias </a>
                     <a href="#comiteOrganizador" class="opcion"> Comit&eacute; </a>
-                    <a class="opcion"> Bienvenidos </a>
-                    <a href="#inicio" class="opcion" > Inicio </a>
+                    <a href="#inicio" class="opcion"> Bienvenidos </a>
+                    <a href="#encabezado" class="opcion" > Inicio </a>
             </div>
         </div>
        
@@ -203,7 +231,7 @@
                     <label>&nbsp; &nbsp;</label> <!--Separacion de los iconos, similar a una tabulador -->
                  <i class="fa fa-twitter icono tamaño"></i>
             </div>
-                             <a href="#" class="subir"  >  <i class="fa fa-chevron-up" aria-hidden="true"></i> </a>
+            <a href="#" class="subir"  id="primerSubir">  <i class="fa fa-chevron-up" aria-hidden="true"></i> </a>
 
         </div>
         
@@ -251,7 +279,34 @@
                 </div> 
             </div>
                 <a href="#" class="subir"  >  <i class="fa fa-chevron-up" aria-hidden="true"></i> </a>
-
+        </div>
+        
+        <div id="galeria">
+            <div class="contenedor">
+                <h1 class="tituloSeccion">Galer&iacute;a</h1>
+                <span class="columna4"> <img src="img/casa1.jpg" width="100%" >  </span>
+                <span class="columna4"> <img src="img/casa2.jpg" width="100%" >  </span>
+                <span class="columna4"> <img src="img/casa3.jpg" width="100%" >  </span>
+                <span class="columna4"> <img src="img/casa4.jpg" width="100%" >  </span>
+            </div>
+        </div>
+        
+        <div id="conferencistas">
+            <div class="contenedor">
+                <h1 class="tituloSeccion"> Conferencistas </h1>
+                <div class="contenedorConferencistas">
+                    <h1 class="conferencistasNombres">Dr. Rafael H. Villareal Rodriguez</h1>
+                    <h1 class="conferencistasDetalles">Departamento de Matem&aacute;ticas /</h1>
+                    <h1 class="conferencistasDetalles">CINVESTAV-IPN</h1>
+                </div>
+                <div class="separacion">  </div>      
+                <div class="contenedorConferencistas">
+                    <h1 class="conferencistasNombres">Daniel cabarcas-Jaramillo</h1>
+                    <h1 class="conferencistasDetalles">Facultad de Ciencias / Universidad</h1>
+                    <h1 class="conferencistasDetalles">Nacional de Colombia</h1>
+                </div>
+            </div>
+           <a href="#" class="subir"  >  <i class="fa fa-chevron-up" aria-hidden="true"></i> </a>
         </div>
         
     </body>
